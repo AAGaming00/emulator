@@ -58,7 +58,7 @@ module.exports = class Emulator extends Plugin {
 		powercord.api.notices.sendToast(id, {...opt, content: msg});
 		setTimeout(() => { // porkord toaster bad
 			powercord.api.notices.closeToast(id)
-		}, opt.timeout + 1000);
+		}, opt.timeout + opt.timeout);
 	}
 
 	startPlugin() {
